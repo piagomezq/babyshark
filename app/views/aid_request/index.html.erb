@@ -1,0 +1,14 @@
+<h1>Solicitudes de atención</h1>
+<table>
+    <% @aid_requests.each do |r| %>
+        <tr>
+            <td><%= r.specialty.name %></td>
+            <td><%= r.patient.first_name %></td>
+            <td><%= r.patient.last_name %></td>
+            <td><%= r.patient.rut %></td>
+            <td><%= r.patient.address %></td>
+            <td><%= r.patient.phone %></td>
+            <td><%= r.description %><br />
+        </tr>
+    <% end %>
+</table>

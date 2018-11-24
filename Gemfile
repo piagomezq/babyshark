@@ -45,3 +45,7 @@ group :development do
   gem 'spring'
 end
 
+
+gem "mysql2", "~> 0.5.2"
+
+gem "appengine", "~> 0.4.6"

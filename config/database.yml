@@ -22,4 +22,10 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  username: "root"
+  password: "72uaEE497aH4gAyM"
+  database: "nexo"
+  socket:   "/cloudsql/nexo-223514:us-central1:nexo"
